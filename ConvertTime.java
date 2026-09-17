@@ -4,14 +4,24 @@ public class ConvertTime{
 	public static void main(String[] args){
 	final int timeMultiplier = 60;
 	Scanner in = new Scanner(System.in);
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	System.out.print("Insert seconds to be converted -->");
 	int seconds = in.nextInt();
-	System.out.print("Insert minutes to be converted -->");
-	int minutes = in.nextInt();
-	System.out.print("Insert hours to be converted -->");
-	int hours = in.nextInt();
 
-	int answer = ((hours * timeMultiplier)+ minutes * 60) + seconds;
-	System.out.printf("the time you have inputed translates to %d seconds!!!",answer);                                       
+	int hours = seconds/3600;
+	int minutes = seconds%3600/60;
+	int secA = seconds % 60;
+	
+	
+ 
+	System.out.printf("Time: %d hour(s) %d minute(s) %d second(s)",hours,minutes,secA);                                       
 	}
 }
