@@ -7,6 +7,7 @@ public class Temperature{
 	System.out.print("Insert Celcius to be converted -->");
 	Double number = in.nextDouble();
 	Double answer = (number * 1.8) + celciusToFarenheit;
-	System.out.printf("%f celsius to Farenheit is %f", number, answer);                                       
+	System.out.printf("%.1f C celsius to Farenheit is %.1f F", number, answer);                                       
 	}
 }
+
